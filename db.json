@@ -1,0 +1,54 @@
+{
+  "hotels" : [
+   {
+    "id":1,
+    "name":"Oryx",
+    "rating":4,
+    "image":"https://i.ibb.co/svVv3Qt/oryx-hotel-aqaba.jpg",
+    "nightPrice": "70 JD/night",
+    "city":"Aqaba",
+    "description":"Aqaba city, overlooking the Red Sea, 15 minutes driving to King Hussein International Airport, 5 minutes away from the city centre of Aqaba. Oryx Hotel Aqaba with its 7 floors is based on the concept of environmental designs and regional architecture surrounded by urban perspective with spectacular sea view. The focus of our facilities are a blend of relaxing leisure and full business service amenities that are based on the newest power and water saving technology so as solar energy enhancing customers comfort. The interior reflects a contemporary atmosphere with a classic elegance agreeable to all receptive travelers.",
+    "title":"Aqaba city, overlooking the Red Sea"
+   },
+   {
+    "id":2,
+    "name":"Mövenpick",
+    "rating":3,
+    "image":"https://i.ibb.co/tmhHxZZ/Screenshot-2023-02-18-at-8-32-37-PM.png",
+    "nightPrice": "60 JD/night",
+    "city":"Aqaba",
+    "description":"ocated on the beachfront in Aqaba, Al Manara, a Luxury Collection Hotel, Aqaba features a private beach area and free WiFi. Boasting a 24-hour front desk, this property also provides guests with an outdoor pool, The property has a garden, as well as a restaurant that serves seafood cuisine,All guest rooms comes with air conditioning, a flat-screen TV with satellite channels, a coffee machine",
+    "title":"Ocated on the beachfront in Aqaba, Al Manara"
+   },
+   {
+    "id":3,
+    "name":"KEMPINSKI",
+    "rating":5,
+    "image":"https://storage.kempinski.com/cdn-cgi/image/w=480,h=550,f=auto,g=auto,fit=cover/ki-cms-prod/images/0/5/9/1/311950-1-eng-GB/10ed85706c3f-74342834_4K.jpg",
+    "nightPrice": "40 JD/night",
+    "city":"Dead Sea",
+    "description":"Located at the lowest point on Earth, our resort is known for its unique exterior and interior design inspired by the hanging gardens of Babylon.Kempinski Hotel Ishtar is located on the shore of the Dead Sea, 434 m (1,312.3 ft) below sea level, Our property is accessible via car from Amman and close to many tourist and historical sites and best-rated landmarks near the Dead Sea ",
+    "title":"Located at the lowest point on Earth"
+   },
+   {
+    "id":4,
+    "name":"Layaali Amman",
+    "rating":3,
+    "image":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/316063947.jpg?k=408cfbf1452c8284c7cdaf3eb30d4dd7e7d7c1beb42ec76e7695bcd943cffdf7&o=&hp=1",
+    "nightPrice": "35 JD/night",
+    "city":"Amman",
+    "description":"Located in Amman and with Al Hussainy Mosque reachable within 700 metres, Layaali Amman Hotel provides concierge services, non-smoking rooms, a shared lounge, free WiFi throughout the property and a terrace. The property is situated 2.6 km from The Islamic Scientific College, 3.9 km from Zahran Palace and 8 km from Jordan Gate Towers. The accommodation features room service, a 24-hour front desk and currency exchange for guests.",
+    "title":"Situated in the best rated area in Amman"
+   },
+   {
+    "id":5,
+    "name":"Hilton",
+    "rating":2,
+    "image":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/68/45/8a/exterior.jpg?w=1100&h=-1&s=1",
+    "nightPrice": "65 JD/night",
+    "city":"Dead Sea",
+    "description":"Stay at the Hilton Dead Sea Resort & Spa for an upscale experience in a unique location. Located at the lowest point on earth, over 1,312 feet below sea level, we are set in the heart of the Jordan Valley, with direct access to the beach. Spend the day lounging on the sundeck of our floating pontoon on the beautiful waters of the Dead Sea for a blissful escape.",
+    "title":"Spa for an upscale experience ......"
+   }
+  ]
+}

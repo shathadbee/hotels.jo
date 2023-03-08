@@ -1,0 +1,144 @@
+<section class="hotel__area pt-100 pb-120 grey-bg">
+  <div class="container">
+     <div class="row align-items-end">
+
+
+        <div class="col-xxl-5 col-xl-6 col-lg-6">
+           <div class="section__title-wrapper mb-60">
+              <h2 class="section__title">Find the Right<br>Hotel <span class="yellow-bg yellow-bg-big">For<img src="assets/img/shape/yellow-bg.png" alt=""></span>  You</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, asperiores?</p>
+           </div>
+        </div>
+     </div>
+     <div class="row  ">
+
+       <mat-tab-group [@.disabled]="true" class="hotel__menu "  (selectedTabChange)="tabChanged($event) "                  >
+          <mat-tab>
+              <ng-template mat-tab-label><div><button type="button" role="tab">See All </button></div></ng-template>
+<!-- <span class="tag"> new </span>-->
+                  <div class="hotel_wrapper">
+                      <div class="row pt-60">
+                          <div *ngFor="let hotel of dataArray" class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 ">
+                              <div class="hotel__item white-bg mb-30 fix shadow-none" >
+                                 <div class="hotel__thumb w-img p-relative fix">
+                                    <a routerLink="/hotels/hotel-details/{{hotel.id}}">
+                                      <img [src]="hotel.image" alt="loading...." style="max-height: 224px; min-height: 224px;">
+                                    </a>
+                                    <div class="hotel__tag">
+                                       <a routerLink="/hotels/hotel-details/{{hotel.id}}" [class]="hotel.color">{{hotel.city}}</a>
+                                    </div>
+                         </div>
+                                 <div class="hotel__content">
+                                    <div class="hotel__meta d-flex align-items-center justify-content-between">
+                                      <div class="hotel__lesson">
+                                        <span><i class="far fa-book-alt"></i>
+                                            {{hotel.name}} </span>
+                                     </div>
+                                       <div class="hotel__rating">
+                                          <span><i class="icon_star"></i>{{hotel.rating}}  </span>
+                                       </div>
+                                    </div>
+                                    <h3 class="hotel__title"><a routerLink="/hotels/hotel-details/{{hotel.id}}">
+                                        {{hotel.title}}</a></h3>
+
+                                 </div>
+                                 <div class="hotel__more d-flex justify-content-between align-items-center">
+                                  <div class="hotel__status d-flex align-items-center">
+                                      <span [class]="hotel.color">${{hotel.nightPrice}}</span>
+
+                                   </div>
+                                    <div class="hotel__btn">
+                                       <a routerLink="/hotels/hotel-details/{{hotel.id}}" class="link-btn">
+                                          Know Details
+                                          <i class="far fa-arrow-right"></i>
+                                          <i class="far fa-arrow-right"></i>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                      </div>
+                  </div>
+
+          </mat-tab>
+          <ng-container *ngFor="let city of cities" >
+            <mat-tab label="{{city}}" >
+              <div class="hotel_wrapper">
+                <div class="row pt-60">
+                    <div *ngFor="let hotel of current" class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                        <div class="hotel__item white-bg mb-30 fix shadow-none">
+                           <div class="hotel__thumb w-img p-relative fix">
+                              <a routerLink="/hotels/hotel-details/{{hotel.id}}">
+                                <img [src]="hotel.image" alt="loading...."  style="max-height: 224px; min-height: 224px;">
+                              </a>
+                              <div class="hotel__tag">
+                                 <a href="#" [class]="hotel.color">{{hotel.city}}</a>
+                              </div>
+                   </div>
+                           <div class="hotel__content">
+                              <div class="hotel__meta d-flex align-items-center justify-content-between">
+                                <div class="hotel__lesson">
+                                  <span><i class="far fa-book-alt"></i>
+                                      {{hotel.name}} </span>
+                               </div>
+                                 <div class="hotel__rating">
+                                    <span><i class="icon_star"></i>{{hotel.rating}}  </span>
+                                 </div>
+                              </div>
+                              <h3 class="hotel__title"><a routerLink="[/hotels/hotel-details/]{{hotel.id}}">
+                                  {{hotel.title}}</a></h3>
+
+                           </div>
+                           <div class="hotel__more d-flex justify-content-between align-items-center">
+                            <div class="hotel__status d-flex align-items-center">
+                                <span [class]="hotel.color">${{hotel.nightPrice}}</span>
+
+                             </div>
+                              <div class="hotel__btn">
+                                 <a routerLink="/hotels/hotel-details/{{hotel.id}}" class="link-btn">
+                                    Know Details
+                                    <i class="far fa-arrow-right"></i>
+                                    <i class="far fa-arrow-right"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+
+            </mat-tab>
+      </ng-container>
+        </mat-tab-group>
+     </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

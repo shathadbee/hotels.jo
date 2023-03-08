@@ -1,0 +1,63 @@
+
+
+ <app-breadcrumb title="Hotels" subtitle="Hotels"></app-breadcrumb>
+
+ <section class="hotel__area pt-160 pb-160 pl-160 d-flex  align-items-center ">
+  <div class="container">
+<div class="row">
+  <div class="col-xxl-12">
+    <div class="hotel__tab-conent">
+
+
+        <div class="tab-content  " id="hotelTabContent">
+  <div *ngFor="let hotel of dataArray" class="col-xxl-20 col-xl-4 col-lg-4 col-md-6   ">
+      <div class="hotel__item white-bg mb-30 fix shadow-none ">
+         <div class="hotel__thumb w-img p-relative fix">
+            <a [routerLink]="['/hotel-details']">
+              <img [src]="hotel.image" alt="loading....">
+            </a>
+            <div class="hotel__tag">
+               <a href="#" [class]="hotel.color">{{hotel.city}}</a>
+            </div>
+ </div>
+         <div class="hotel__content">
+            <div class="hotel__meta d-flex align-items-center justify-content-between">
+              <div class="hotel__lesson">
+                <span><i class="far fa-book-alt"></i>
+                    {{hotel.name}} </span>
+             </div>
+               <div class="hotel__rating">
+                  <span><i class="icon_star"></i>{{hotel.rating}}  </span>
+               </div>
+            </div>
+            <h3 class="hotel__title"><a [routerLink]="['/hotel-details']">
+                {{hotel.title}}</a></h3>
+
+         </div>
+         <div class="hotel__more d-flex justify-content-between align-items-center">
+          <div class="hotel__status d-flex align-items-center">
+              <span [class]="hotel.color">${{hotel.nightPrice}}</span>
+
+           </div>
+            <div class="hotel__btn">
+              <a routerLink="/hotels/hotel-details/{{hotel.id}}" class="link-btn">
+                  Know Details
+                  <i class="far fa-arrow-right"></i>
+                  <i class="far fa-arrow-right"></i>
+               </a>
+
+            </div>
+         </div>
+
+
+      </div> <div class="   pb-40 "><a [routerLink]="['/hotel-details']">
+        {{hotel.description}}</a></div>
+   </div></div>
+
+
+
+  </div></div>
+</div>
+</div>
+</section>
+
